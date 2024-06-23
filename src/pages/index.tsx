@@ -38,8 +38,8 @@ const Home: React.FC = () => {
             <CardStack />
           </Flex>
         </Box>
-        <Flex direction="column" p='4' borderRadius="18" bg="rgba(100, 123, 200, 0.2)">
-          <Heading color='white'>Testando hello</Heading>
+        <Flex direction="column" p='4' borderRadius="18" bg="rgba(100, 123, 200, 0.2)" gap='3'>
+          <Heading color='white' fontSize='20'>Testando hello</Heading>
           <Text color="white">Testando Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus obcaecati molestiae eveniet numquam. Adipisci itaque ut veritatis ex eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aspernatur reiciendis quod.</Text>
         </Flex>
       </Flex>
