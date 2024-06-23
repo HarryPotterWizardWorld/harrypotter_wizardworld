@@ -30,7 +30,7 @@ const theme = extendTheme({
       'html, body': {
         maxWidth: '100vw',
         overflowX: 'hidden',
-        background: `url('/Background.svg') no-repeat center center fixed`,
+        background: "#010326",
       },
       body: {
         color: 'rgb(var(--foreground-rgb))',
