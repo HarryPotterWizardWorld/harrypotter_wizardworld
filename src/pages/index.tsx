@@ -8,9 +8,9 @@ const Home: React.FC = () => {
   const handleToggle = () => setShow(!show)
   return (
     <Container as="section" p='6' display="flex" flexDirection="row" justifyContent="space-between" borderRadius="12" border='none' w='100vw' h="calc(100vh - 64px)" maxW='100vw'>
-      <Flex direction="column" w="70%" gap="2">
+      <Flex direction="column" w="70%" h='100%' maxH='100%' gap="2">
         <Box 
-          bgImage="https://wallpapers.com/images/featured/harry-potter-gi5aixvd4d26cpij.jpg"
+          bgImage="https://images.hdqwalls.com/wallpapers/harry-potter-20th-anniversary-return-to-hogwarts-2023-l2.jpg"
           objectFit="cover"
           bgSize="cover"
           bgPosition="center"
@@ -23,37 +23,41 @@ const Home: React.FC = () => {
           alignItems='center'
           p="3"
           borderRadius="18"
+          maxH='65%'
         >
           <Flex  justifyContent="space-between" align="flex-end" h="100%" w="100%" direction="row" gap='20%' >
-            <Box display="flex" flexDirection="column" p='3' bg="rgba(100, 123, 200, 0.4)" borderRadius="12" border='none' backdropFilter="blur(10px)" >
+            <Box display="flex" flexDirection="column" p='3' bg="rgba(0,0,0, 0.7)" borderRadius="12" border='none' backdropFilter="blur(10px)" gap='3' >
+              <Heading fontSize='20px'>Did you know it?</Heading>
+              <Flex direction='column'>
                 <Collapse startingHeight={20} in={show}>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                  terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                  labore wes anderson cred nesciunt sapiente ea proident.
-              </Collapse>
-              <Button size='sm' w="8rem" onClick={handleToggle} mt='1rem' variant="outline" color="white">
-                Show {show ? 'Less' : 'More'}
-              </Button>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                    labore wes anderson cred nesciunt sapiente ea proident.
+                </Collapse>
+                <Button size='sm' w="8rem" onClick={handleToggle} mt='1rem' variant="outline" color="#cbaa46" borderColor='#cbaa46'>
+                  Show {show ? 'Less' : 'More'}
+                </Button>
+              </Flex>
             </Box>
             <CardStack />
           </Flex>
         </Box>
-        <Flex direction="column" p='4' borderRadius="18" bg="rgba(100, 123, 200, 0.2)" gap='3'>
-          <Heading color='white' fontSize='20'>Testando hello</Heading>
-          <Text color="white">Testando Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus obcaecati molestiae eveniet numquam. Adipisci itaque ut veritatis ex eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aspernatur reiciendis quod.</Text>
+        <Flex direction="column" p='4' borderRadius="18" bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' gap='3'>
+          <Heading color='#cbaa46' fontSize='20'>Testando hello</Heading>
+          <Text color="#b5b8a8">Testando Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus obcaecati molestiae eveniet numquam. Adipisci itaque ut veritatis ex eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aspernatur reiciendis quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex assumenda cupiditate nam facere tempore eius odio deserunt necessitatibus voluptate, labore, quis quos ducimus tenetur suscipit corporis accusantium architecto est? Quisquam, fuga!</Text>
         </Flex>
       </Flex>
       <Flex direction="column" maxW="30%" w="30%" maxH='100%' gap="3" px='4' >
         <SimpleGrid display="flex" flexDirection="column">
-          <Card bg="rgba(100, 123, 200, 0.2)" borderRadius="18">
-            <CardHeader>
-              <Heading size='md' color='#DFEDF2'>Know all the spells</Heading>
+          <Card bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' borderRadius="18">
+            <CardHeader pb='0'>
+              <Heading size='md' color='#cbaa46'>Know all the spells</Heading>
             </CardHeader>
             <CardBody>
               <Text textColor="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vitae magni maiores fugit totam impedit id saepe, sed excepturi recusandae magnam velit.</Text>
             </CardBody>
-            <CardFooter>
-              <Button bg="#3868A6" textColor="white" fontWeight="300">View here</Button>
+            <CardFooter pt='0'>
+              <Button bg="#cbaa46" textColor="black">View here</Button>
             </CardFooter>
           </Card>
         </SimpleGrid>

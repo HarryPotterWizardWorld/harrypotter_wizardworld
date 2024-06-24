@@ -16,7 +16,7 @@ export default function CardStack() {
           h='100px'
           w='100%'
           p='2'
-          bg="rgba(100, 123, 200, 0.4)"
+          bg="rgba(0,0,0, 0.7)"
           borderRadius="12"
           border='none'
           backdropFilter="blur(10px)"
@@ -30,7 +30,7 @@ export default function CardStack() {
           />
           <Stack display='flex' flexDirection='row' flex='1' alignItems='center' gap='0'>
             <CardBody px='2' py='1' maxH='100%' display='flex' flexDirection='column'>
-              <Heading color='white' size={{ base: 'sm', sm: 'sm' }}>{card.title}</Heading>
+              <Heading color='#cbaa46' size={{ base: 'sm', sm: 'sm' }}>{card.title}</Heading>
               <Text py='1' textColor='#f0f0f0' fontSize={{ base: '12px', sm: '12px', md: '14px' }}>
                 {card.description}
               </Text>

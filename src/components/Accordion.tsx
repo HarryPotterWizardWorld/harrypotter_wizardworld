@@ -4,9 +4,9 @@ import accordionData from '../data/accordingData.json';
 
 export default function AccordionCard() {
   return (
-    <Box bg="rgba(100, 123, 200, 0.2)" borderRadius="18" h="100%" display='flex' flexDirection='column' p='5' gap='3'>
+    <Box bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' borderRadius="18" h="100%" display='flex' flexDirection='column' p='5' gap='3'>
       <Flex>
-        <Heading fontSize='20' color='white'>Testando</Heading>
+        <Heading fontSize='20' color='#cbaa46'>Testando</Heading>
       </Flex>
       <Box>
         <Accordion allowToggle maxH='100%'>
