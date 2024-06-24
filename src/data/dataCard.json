@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Gryphyndor",
+      "description": "Bravery, bravery, war.",
+      "image": "/Gryffindor.svg"
+    },
+    {
+      "title": "Hufflepuff",
+      "description": "Loyalty, patience, fairness.",
+      "image": "/Hufflepuff.svg"
+    },
+    {
+      "title": "Ravenclaw",
+      "description": "Intelligence, wisdom, creativity.",
+      "image": "/Ravenclaw.svg"
+    },
+    {
+      "title": "Slytherin",
+      "description": "Ambition, cunning, resourcefulness.",
+      "image": "/Slytherin.svg"
+    }
+  ]
+  
