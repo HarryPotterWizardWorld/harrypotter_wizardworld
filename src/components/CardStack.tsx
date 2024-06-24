@@ -30,13 +30,13 @@ export default function CardStack() {
           />
           <Stack display='flex' flexDirection='row' flex='1' alignItems='center' gap='0'>
             <CardBody px='2' py='1' maxH='100%' display='flex' flexDirection='column'>
-              <Heading color='#cbaa46' size={{ base: 'sm', sm: 'sm' }}>{card.title}</Heading>
+              <Heading color='#cdb373' size={{ base: 'sm', sm: 'sm' }}>{card.title}</Heading>
               <Text py='1' textColor='#f0f0f0' fontSize={{ base: '12px', sm: '12px', md: '14px' }}>
                 {card.description}
               </Text>
             </CardBody>
             <CardFooter p='0' alignItems='center'>
-              <Button variant='ghost' colorScheme='blue'>
+              <Button variant='ghost' colorScheme='purple'>
                 <ArrowForwardIcon/>
               </Button>
             </CardFooter>

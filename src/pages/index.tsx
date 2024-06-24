@@ -27,14 +27,16 @@ const Home: React.FC = () => {
         >
           <Flex  justifyContent="space-between" align="flex-end" h="100%" w="100%" direction="row" gap='20%' >
             <Box display="flex" flexDirection="column" p='3' bg="rgba(0,0,0, 0.7)" borderRadius="12" border='none' backdropFilter="blur(10px)" gap='3' >
-              <Heading fontSize='20px'>Did you know it?</Heading>
+              <Heading fontSize='20px' color='#cdb373'>Did you know it?</Heading>
               <Flex direction='column'>
-                <Collapse startingHeight={20} in={show}>
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                    labore wes anderson cred nesciunt sapiente ea proident.
+                <Collapse startingHeight={20} in={show} color='#b5b8a8'>
+                  <Text color='#b5b8a8'>
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                      terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                      labore wes anderson cred nesciunt sapiente ea proident.
+                  </Text>
                 </Collapse>
-                <Button size='sm' w="8rem" onClick={handleToggle} mt='1rem' variant="outline" color="#cbaa46" borderColor='#cbaa46'>
+                <Button size='sm' w="8rem" onClick={handleToggle} mt='1rem' variant='solid' bg='#6b63b5' color='white'>
                   Show {show ? 'Less' : 'More'}
                 </Button>
               </Flex>
@@ -43,21 +45,21 @@ const Home: React.FC = () => {
           </Flex>
         </Box>
         <Flex direction="column" p='4' borderRadius="18" bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' gap='3'>
-          <Heading color='#cbaa46' fontSize='20'>Testando hello</Heading>
+          <Heading color='#' fontSize='20'>Testando hello</Heading>
           <Text color="#b5b8a8">Testando Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus obcaecati molestiae eveniet numquam. Adipisci itaque ut veritatis ex eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aspernatur reiciendis quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex assumenda cupiditate nam facere tempore eius odio deserunt necessitatibus voluptate, labore, quis quos ducimus tenetur suscipit corporis accusantium architecto est? Quisquam, fuga!</Text>
         </Flex>
       </Flex>
       <Flex direction="column" maxW="30%" w="30%" maxH='100%' gap="3" px='4' >
         <SimpleGrid display="flex" flexDirection="column">
-          <Card bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' borderRadius="18">
+          <Card bg="#000" border='solid' borderWidth='1px' borderColor='#a27d2f' borderRadius="18" alignItems='center'>
             <CardHeader pb='0'>
-              <Heading size='md' color='#cbaa46'>Know all the spells</Heading>
+              <Heading size='md' color='#cdb373'>— Know all the spells —</Heading>
             </CardHeader>
             <CardBody>
-              <Text textColor="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vitae magni maiores fugit totam impedit id saepe, sed excepturi recusandae magnam velit.</Text>
+              <Text textColor="#b5b8a8" align='center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vitae magni maiores fugit totam impedit id saepe, sed excepturi recusandae magnam velit.</Text>
             </CardBody>
             <CardFooter pt='0'>
-              <Button bg="#cbaa46" textColor="black">View here</Button>
+              <Button bg="#6b63b5" textColor="#fff">View here</Button>
             </CardFooter>
           </Card>
         </SimpleGrid>
