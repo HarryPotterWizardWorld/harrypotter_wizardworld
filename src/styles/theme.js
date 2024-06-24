@@ -30,7 +30,7 @@ const theme = extendTheme({
       'html, body': {
         maxWidth: '100vw',
         overflowX: 'hidden',
-        background: "#010326",
+        background: "#200820",
       },
       body: {
         color: 'rgb(var(--foreground-rgb))',
